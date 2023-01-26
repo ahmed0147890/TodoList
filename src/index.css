@@ -1,0 +1,98 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background: #7c54c0;
+}
+.container{
+  width: 60%;
+  margin: 100px auto;
+}
+.text-header{
+  text-align: center;
+}
+.ListItem{
+  background: white;
+  color: #7c54c0 ;
+}
+.ListItem p{
+  margin: 0;
+  text-align: center;
+  padding: 10px 0;
+  color:  #7c54c0;
+}
+.ListItem span{
+  display: inline-block;
+  text-align: center ;
+  padding: 10px 0;
+  font-size: 20px;
+  border: 0.3px solid wheat;
+}
+.ListItem span.title{
+  background: blueviolet;
+  color: white;
+}
+.ListItem span.name,
+.form input[type="text"]{
+  width: 60%;
+}
+.ListItem span.age,
+.form input[type="number"]{
+  width: 30%;
+}
+.ListItem span.action,
+.form input[type="submit"]{
+  width: 10%;
+}
+.ListItem .icon{
+ color: red;
+ cursor: pointer;
+}
+.form input[type="submit"]{
+  background: blueviolet;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.form input[type="submit"]:hover{
+  background: red;
+  letter-spacing: 2px;
+}
+
+
+.form input{
+  padding: 10px;
+  background:#ebebeb ;
+  border: 0.3px solid #320e0e;
+}
+@media (max-width:450px){
+  .container{
+    width: 80%;
+  }
+  .ListItem span.action,
+  .form input[type="submit"]{
+    width: 20%;
+  }
+  .ListItem span.name,
+  .form input[type="text"]{
+    width: 50%;
+  }
+  
+}
+@media (min-width:405px){
+  .container{
+    width: 80%;
+  }
+  .ListItem span.action,
+  .form input[type="submit"]{
+    width: 20%;
+  }
+  .ListItem span.name,
+  .form input[type="text"]{
+    width: 50%;
+  }
+  
+  
+}
